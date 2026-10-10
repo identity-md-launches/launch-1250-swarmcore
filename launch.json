@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "SwarmCore",
+    "name": "SwarmCore",
+    "symbol": "SWORE",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8800,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x6bf192ebef135e0f645e99d59d9bf44e7711606c"
+  },
+  "notes": "SwarmCore (SWORE) is a standard ERC-20 with 18 decimals. Its argument-free constructor mints the fixed supply of 1,000,000,000 tokens once to msg.sender, the factory during launch. Transfers have no token fees, and the token exposes no further minting or administrative powers. No application contracts are included. pool.initialPrice is provenance only; the deployer derives the opening price from economics.initialMarketCapWei and token.totalSupply."
+}
